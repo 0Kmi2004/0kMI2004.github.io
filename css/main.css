@@ -1,0 +1,39 @@
+:root {
+    --theme-color: #628141;
+    --theme-secondary-color: rgb(36, 11, 0);
+    --primary-color: #1B211A;
+    --secondary: rgb(233, 213, 171);
+    --secondarydary: rgb(211, 184, 124);
+    --third-color: #628141;
+    --text-color-inverse: #e5e5e5;
+    --text-color: black;
+    --navbar-shallow-color: #e5e5e5;
+    --menu-mobile-background-color: #3a4460;
+    --font-retroica: url('../fonts/Retroica-Regular.ttf');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary); 
+    padding-top: 70px;
+
+}
+
+@font-face {
+  font-family: "develuz";
+  src: url("../fonts/Develuz.ttf") format("woff2");
+  
+  
+}
+
+
+
+section, div, h2, h3, img, nav, a, li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}

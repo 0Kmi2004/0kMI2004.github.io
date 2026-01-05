@@ -1,0 +1,148 @@
+.profile {
+    background-color: var(--secondary);
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.profile-img img {
+
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title-container {
+    padding: 0;
+    margin: 2em 1.6em;
+    display: flex;
+    text-align: center;
+
+}
+
+.profile-title {
+    font-family: "develuz", sans-serif;
+    letter-spacing: 0.5em;
+    font-size: 35px;
+    font-weight: bold;
+
+    color: var(--primary-color);
+
+}
+
+.profile-container {
+
+    margin: 0 1em;
+    background-color: var(--primary-color);
+    padding: 0 2em;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.descProfile {
+    
+    font-family: "develuz", sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-size: 25px;
+
+
+    color: whitesmoke;
+}
+
+.animaProfile {
+    font-family: "develuz", sans-serif;
+    letter-spacing: 0.6em;
+    font-weight: bold;
+    font-size: 25px;
+
+
+    color: whitesmoke;
+
+}
+
+@media (min-width: 950px) {
+    .profile {
+        display: flex;
+        flex-direction: row;
+        gap: 5em;
+        padding: 3em;
+
+
+        background-color: var(--secondary);
+        text-align: left;
+
+
+
+    }
+
+    .profile-info {
+        padding-top: 1em;
+    }
+    
+    .title-container {
+
+        text-align: start;
+    }
+
+    .profile-title {
+        padding: 0;
+        font-size: 50px;
+        color: var(--primary-color);
+        max-width: 500px;
+        margin: 0;
+
+    }
+
+    .profile-container {
+        padding: 0 2em 0 2em;
+        width: auto;
+        margin: 0;
+        
+    }
+
+    .descProfile {
+        font-size: 30px;
+        padding-left: 0;
+        margin: 0.5em 0;
+        text-align: left;
+    }
+
+    .animaProfile {
+        font-size: 30px;
+
+        padding-left: 0;
+        text-align: left;
+        margin: 0.5em 0;
+    }
+
+    .profile-img {
+
+        margin: 0;
+    }
+
+    .profile-img img {
+        max-width: 400px;
+        margin: 0;
+        
+        border-radius: 50%;
+    }
+}
+
+
+

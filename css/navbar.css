@@ -1,0 +1,151 @@
+header {
+border-bottom: none;
+}
+
+
+.topheader {
+    box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    position: fixed;
+    background-color: white;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1em 0;
+}
+
+.topnav {
+    display: flex;
+
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 0.5em;
+
+}
+
+.toptop{
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        color: var(--text-color);
+        
+}
+
+.encabezado {
+    color: rgb(0, 0, 0);
+
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    font-family: "develuz", sans-serif;
+    letter-spacing: 0.1em;
+    padding-left: 0.5em;
+    font-weight: bold;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu li {
+    padding: 0 1.5em;
+}
+
+.menu a {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+
+    letter-spacing: 0.1em;
+    font-family: "develuz", sans-serif;
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 850px) {
+	.toptop{
+        	width: 100%;
+        	display: flex;
+        	align-items: center;
+        	gap: 1em;
+            justify-content: space-around;
+        	color: var(--text-color);
+    	}
+
+    .encabezado {
+        font-size: 1.2em;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--menu-mobile-background-color);
+
+        overflow-y: auto;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+
+    
+
+    .menu li {
+        padding: 0;
+    }
+
+    .menu a {
+        font-size: 18px;
+        color: var(--text-color-inverse);
+        line-height: 60px;
+
+ 
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+        
+    }
+
+    .close-menu {
+        align-self: flex-end;
+        padding: 27px 31px;
+    }
+
+    .menu_opened {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 850px) {
+  .encabezado {
+    font-size: 1.4em;
+  }
+
+}
+

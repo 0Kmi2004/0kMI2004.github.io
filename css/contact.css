@@ -1,0 +1,128 @@
+.div-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-contacto {
+  background-color: var(--primary-color);
+
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+}
+
+.seccion-contacto h3 {
+
+
+color: var(--secondary);
+font-size: 26px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+
+.form {
+  display: grid;
+
+  grid-template-columns: repeat(1, 1fr);
+
+
+  gap: 1rem;
+  justify-content: center;
+
+}
+
+/* El campo que ocupa toda la fila */
+.field {
+  width: 100%;
+
+}
+
+/* Estilos base */
+.field input,
+.field textarea {
+
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  min-width: 250px;
+}
+
+/* Focus */
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #53000e;
+}
+
+.contacto-enviar {
+  display: flex;
+  justify-content: center;
+grid-column: 1 / -1;
+  
+}
+
+.contacto-enviar button {
+  background-color: #1919e6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+}
+
+.botones-redes {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.botones-redes img {
+  max-width: 10vw;
+  max-height: 10vh;
+}
+
+footer {
+  background-color: #00002c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 2vw 1.5vh;
+  
+}
+
+footer p {
+font-size: 12px;
+}
+
+@media (min-width: 850px) {
+  .form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em 2.5em;
+
+  }
+
+  .field {
+    width: auto;
+
+  }
+
+  /* El campo que ocupa toda la fila */
+  .field.full {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+
+  /* Estilos base */
+  .field input,
+  .field textarea {
+    width: 100%;
+    background-color: beige;
+    resize: none;
+
+  }
+}
