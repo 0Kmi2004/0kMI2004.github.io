@@ -1,5 +1,5 @@
 .about {
-    background-color: var(--primary-color);
+    background-color: #570A06;
     padding: 8em 3em 8em 3em;
 }
 
@@ -49,36 +49,30 @@
 
 .about-btns {
     display: flex;
-    gap: 1em;
     flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1.5em;
+
 
 }
 
 .about-btns a {
     background-color: var(--secondary);
-    color: var(--primary-color);
-    padding: 0.5em 1em;
+    color:#380408;
+    padding: 1em 1em;
     text-decoration: none;
     font-family: var(--font-retroica), serif;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 700;
     letter-spacing: 0.1em;
     border: 2px solid var(--primary-color);
-    border-radius: 20px;
+    border-radius: 30px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .about-btns a:hover {
     background-color: var(--secondarydary) ;
-    color: var(--primary-color);
-    padding: 0.5em 1em;
-    text-decoration: none;
-    font-family: var(--font-retroica), serif;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    border: 2px solid var(--primary-color);
-    border-radius: 20px;
+    scale: 1.05;
 
 }
 

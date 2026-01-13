@@ -1,21 +1,23 @@
 header {
 border-bottom: none;
+position: fixed;
+z-index: 100;
 }
 
 
 .topheader {
     box-shadow: 0 4px 5px var(--navbar-shallow-color);
     position: fixed;
-    background-color: white;
+    background-color: #570A06;
     left: 0;
     top: 0;
     width: 100%;
-    padding: 1em 0;
+    padding: 1.5em 0;
 }
 
 .topnav {
     display: flex;
-
+    
     justify-content: space-between;
     max-width: 1050px;
     margin: 0 auto;
@@ -29,12 +31,11 @@ border-bottom: none;
         display: flex;
         align-items: center;
         color: var(--text-color);
-        
+
 }
 
 .encabezado {
-    color: rgb(0, 0, 0);
-
+    color: white;
     font-size: 1.5em;
     margin: 0;
     padding: 0;
@@ -42,10 +43,12 @@ border-bottom: none;
     letter-spacing: 0.1em;
     padding-left: 0.5em;
     font-weight: bold;
+    text-align: center;
 }
 
 .logo img {
     border-radius: 50%;
+
 }
 
 
@@ -65,13 +68,20 @@ border-bottom: none;
 }
 
 .menu a {
-    color: var(--text-color);
+    color: white;
     font-size: 18px;
     font-weight: bold;
-
+    padding: .5em;
     letter-spacing: 0.1em;
     font-family: "develuz", sans-serif;
 }
+
+.menu a:hover {
+    background-color: #731a15;
+    box-shadow: 0 5px 4px #570A06;
+    border-radius: 20px;
+}
+
 
 .open-menu,
 .close-menu {
@@ -86,7 +96,8 @@ border-bottom: none;
         	gap: 1em;
             justify-content: space-around;
         	color: var(--text-color);
-    	}
+    	
+        }
 
     .encabezado {
         font-size: 1.2em;

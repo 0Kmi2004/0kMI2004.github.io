@@ -4,11 +4,13 @@
     align-items: center;
     gap: 5em;
 
-    padding: 5em 1em;
+    padding: 10vh 2em;
 }
 
 .projects-title h2 {
+    padding: 3em 0 1em;
     color: var(--primary-color);
+    font-size: 30px;
 }
 
 .grid-proyectos {
@@ -18,45 +20,93 @@
     max-width: 400px;
 }
 
+.proyecto-card {
+    box-shadow: 5px 5px 30px;
+    border-radius: 40px;
+    max-width: 400px;
+
+}
+
+.proyecto-card:hover {
+    scale: 1.05;
+}
+
 .proyecto-img {
     display: flex;
     justify-content: center;
     background-color: white;
-    max-height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    max-height: 130px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 0 2em;
+}
+
+.proyecto-img img {
+    width: 100%;
+    object-fit: cover;
+    
 }
 
 .etiqueta-proyecto {
     display: flex;
     flex-direction: column;
-    padding: 1em 1em;
+    padding: 1.7em 2.5em .7em;
     flex-wrap: wrap;
     background-color: var(--primary-color);
-    border-end-start-radius: 20px;
-    border-end-end-radius: 20px;
-    box-shadow: 4px 4px 8px var(--navbar-shallow-color);
+    border-end-start-radius: 40px;
+    border-end-end-radius: 40px;
+    justify-content: center;
 }
 
 .etiqueta-proyecto h3 {
-    color: var(--secondary);
+    color: white;
+    font-size: 1.7em;
+    line-height: 1.3em;
 }
 
 .etiqueta-proyecto p {
     padding-bottom: 0.5em;
-    color: var(--secondary);
+    color: white;
+    
+    line-height: 1.5em;
+    font-size: 1.2em;
 }
 
 .proyecto-btns {
     display: flex;
     flex-wrap: wrap;
+    gap: .8em;
+    margin-bottom: 1.5em;
+    justify-content: start;
 }
 
 .proyecto-btns a {
-    background-color: var(--secondary);
-    border-radius: 20px;
+    background-color:var(--primary-color);
+    border-radius: 20px ;
     padding: 0.5em 1em;
-    margin-right: 0.5em;
+
     font-size: 16px;
+    color: white;
+    font-weight: bold;
+
+    border: 1px solid white;
+}
+
+/*{}*/
+
+.proyecto-btns a:hover {
+    background-color:white;
     color: var(--primary-color);
+    scale: calc(1.05);
+}
+
+@media (min-width: 850px) {
+    .grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+    max-width: 1000px;
+}
 }

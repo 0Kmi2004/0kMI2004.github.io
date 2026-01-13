@@ -15,9 +15,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--secondary); 
-    padding-top: 70px;
+    margin-top: 5em;
 
 }
+
 
 @font-face {
   font-family: "develuz";
@@ -28,7 +29,7 @@ body {
 
 
 
-section, div, h2, h3, img, nav, a, li {
+section, div, h2, h3, img, nav, a, li, textarea, input {
     padding: 0;
     margin: 0;
 }
