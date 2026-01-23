@@ -5,50 +5,61 @@ z-index: 100;
 }
 
 
+
 .topheader {
     box-shadow: 0 4px 5px var(--navbar-shallow-color);
     position: fixed;
     background-color: #570A06;
+
     left: 0;
     top: 0;
+    right: 0;
     width: 100%;
     padding: 1.5em 0;
 }
 
 .topnav {
+
     display: flex;
-    
-    justify-content: space-between;
-    max-width: 1050px;
-    margin: 0 auto;
+    width: 97%;
+    margin: 0 1em;
+    justify-content: space-around;
+
     align-items: center;
-    padding: 0 0.5em;
+    flex-direction: row;
 
 }
 
+.topnav ul {
+    display: flex;
+}
+
 .toptop{
-        padding: 0 15px;
+
         display: flex;
         align-items: center;
         color: var(--text-color);
+        flex-wrap: nowrap;
+        height: 3em;
+        gap: 1em;
 
 }
 
 .encabezado {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0;
     padding: 0;
-    font-family: "develuz", sans-serif;
-    letter-spacing: 0.1em;
-    padding-left: 0.5em;
-    font-weight: bold;
+    font-family: "russo one", sans-serif;
+
+   
     text-align: center;
+
+
 }
 
 .logo img {
-    border-radius: 50%;
-
+    border-radius: 50%; 
 }
 
 
@@ -58,28 +69,33 @@ z-index: 100;
 .menu {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    
+
+    flex-wrap: nowrap;
+    align-items: center;
+
+flex-direction: row;
+   
 }
 
 .menu li {
-    padding: 0 1.5em;
+    padding: .5em 1.5em;
+    flex: 1 1 0;
+    display: flex;
 }
 
 .menu a {
     color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: .5em;
+    font-size: .9em;
+
+    text-wrap: nowrap;
     letter-spacing: 0.1em;
-    font-family: "develuz", sans-serif;
+    font-family: "russo one", sans-serif;
 }
 
-.menu a:hover {
+.menu li:hover {
     background-color: #731a15;
     box-shadow: 0 5px 4px #570A06;
-    border-radius: 20px;
+
 }
 
 
@@ -88,48 +104,79 @@ z-index: 100;
     display: none;
 }
 
+
 @media (max-width: 850px) {
+    .topnav {
+        padding: 0 0;
+        width: 80%;
+        align-items: center;
+
+        margin: auto;
+    }
+
 	.toptop{
-        	width: 100%;
+
         	display: flex;
         	align-items: center;
-        	gap: 1em;
-            justify-content: space-around;
+        	gap: 2em;
+            width: 100%;
         	color: var(--text-color);
-    	
+
+        padding: 0;
+        justify-content: space-around;
+
         }
+
+
 
     .encabezado {
         font-size: 1.2em;
+
     }
+
 
     .menu {
         flex-direction: column;
         position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
+        right: 0;
+        top: 6em;
+        width: 12em;
         align-items: center;
-        background-color: var(--menu-mobile-background-color);
-
+        background-color: #570A06;
+        box-shadow: 0cqb;
         overflow-y: auto;
-
+        gap: 0;
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 5px 5px 30px;
+        border-top: solid 2px white;
     }
 
     
 
     .menu li {
-        padding: 0;
+        text-align: center;
+        padding: 0 0;
+
+        width: 100%;
+        line-height: 2.5em;
+
+        
+        
+
     }
 
     .menu a {
-        font-size: 18px;
+        text-align: center;
+        font-size: 13px;
         color: var(--text-color-inverse);
-        line-height: 60px;
 
+        padding: 0;
+        flex: 1 0 0;
+        text-wrap: nowrap;
  
     }
 
@@ -137,9 +184,12 @@ z-index: 100;
     .close-menu {
         display: block;
         border: none;
-        background: none;
         cursor: pointer;
-        
+        background: none;
+    }
+
+    .open-menu {
+        padding: 0 3px;
     }
 
     .close-menu {
@@ -154,7 +204,17 @@ z-index: 100;
 }
 
 @media (min-width: 500px) and (max-width: 850px) {
-  .encabezado {
+    .topnav {
+    justify-content: space-around;
+    
+  }
+
+    .toptop {
+    justify-content: space-around;
+
+  }
+
+    .encabezado {
     font-size: 1.4em;
   }
 

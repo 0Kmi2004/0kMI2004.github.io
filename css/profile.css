@@ -1,149 +1,296 @@
 .profile {
-    background-color: #380408;
+    background-color: var(--secondary);
     text-align: left;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1em 0;
+    padding: 1em 2em;
+    gap: 2em;
+    align-items: center;
+
 }
 
 .profile-img {
     display: flex;
+    flex: 0 0 1;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: .5em 0;
+    max-width: 300px;
+
 }
 
 .profile-img img {
-
-    max-width: 300px;
+    display: flex;
+    flex: 0 0 1;
+    max-width: 100%;
     border-radius: 50%;
     border: 10px solid #570A06;
+    object-fit: cover;
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: auto;
+    margin-top: 2em;
+    gap: 1.5em;
+    margin-top: 4em;
 }
 
 .title-container {
-    padding: 0;
-    margin: 2em 1.6em;
     display: flex;
+
+
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.profile-title {
+    font-family: "russo one", sans-serif;
+
+    font-size: 35px;
+    
+    display: flex;
+
+    color: var(--primary-color);
+    text-align: center;
+}
+
+
+
+
+
+
+.descProfile {
+
+    font-family: "russo one", sans-serif;
+    font-size: 25px;
+
+
+    color:  var(--primary-color);
     text-align: center;
 
 }
 
-.profile-title {
-    font-family: "develuz", sans-serif;
-    letter-spacing: 0.5em;
-    font-size: 35px;
-    font-weight: bold;
 
-    color: var(--primary-color);
+.descProfile span{
+    position: relative;
+    display: flex;
+flex-wrap: wrap;
 
 }
 
-.profile-container {
+.descProfile span::before {
+    content: "junior front end developer" ;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    animation: words 20s infinite;
 
-    margin: 0 1em;
-    background-color: #380408;
-    padding: 0 2em;
-    align-content: center;
-    border-radius: 20px;
+
 }
 
-.descProfile {
-    
-    font-family: "develuz", sans-serif;
-    letter-spacing: 0.2em;
-    font-weight: bold;
-    font-size: 25px;
+.descProfile span::after {
+    content: "";
+    position: absolute;
 
+    height: 100%;
+    background-color: var(--secondary);
 
-    color: whitesmoke;
+    display: flex;
+    right: 0;
+   
+    animation: cursor .1s infinite, typing 25s steps(20) infinite;
 }
+
+
+
+@keyframes words{
+    0%, 100%{
+        content: "junior front end developer" ;
+
+    }
+
+
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+        } 
+
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: 100%;
+        } 
+
+} 
+
 
 .animaProfile {
-    font-family: "develuz", sans-serif;
-    letter-spacing: 0.6em;
-    font-weight: bold;
-    font-size: 25px;
+
+    text-align: center;
+  margin: 0;
+
+}
+
+.animaProfile span {
+
+  opacity: 0;
+    margin: 0;
+  animation: textFadeLoop 4s infinite;
+}
+
+.animaProfile .line-1{
+    animation-delay: 0s;
+    font-family: "russo one";
+
+}
 
 
-    color: whitesmoke;
+/* primera línea */
+.animaProfile .line-2 {
+  animation-delay: 0.35s;
+font-family: "russo one";
 
+}
+
+/* segunda línea aparece después */
+.animaProfile .line-3 {
+  animation-delay: 0.70s;
+  font-family: "russo one";
+}
+
+@keyframes textFadeLoop {
+  0% {
+    opacity: 0;
+
+  }
+
+  15% {
+    opacity: 1;
+
+  }
+
+  65% {
+    opacity: 1;
+
+  }
+
+  100% {
+    opacity: 0;
+
+  }
 }
 
 @media (min-width: 950px) {
     .profile {
         display: flex;
         flex-direction: row;
-        gap: 5em;
-        padding: 3em;
-
-
-        background-color: var(--secondary);
+        gap: 4em;
+        padding: 3em 2em;
+        justify-content: space-evenly;
+        margin-top: 0;
         text-align: left;
 
 
 
     }
 
-    .profile-info {
-        padding-top: 1em;
-    }
+    .profile-info  {
+        margin-top: 2em;
+    }  
     
     .title-container {
+        display: flex;
 
-        text-align: start;
+        text-align: left;
+       
     }
 
     .profile-title {
-        padding: 0;
-        font-size: 50px;
+        text-wrap: nowrap;
+        font-size: 55px;
         color: var(--primary-color);
-        max-width: 500px;
+        text-align: center;
         margin: 0;
-
+    
     }
 
     .profile-container {
-        padding: 0 2em 0 2em;
-        width: auto;
+        gap: 0;
         margin: 0;
-        
     }
 
     .descProfile {
         font-size: 30px;
         padding-left: 0;
-        margin: 0.5em 0;
+        margin: .3em 0;
         text-align: left;
+        
     }
 
     .animaProfile {
-        font-size: 30px;
-
+        font-size: 33px;
         padding-left: 0;
         text-align: left;
-        margin: 0.5em 0;
+        margin: 0;
+        line-height: 1.5em;
     }
 
-    .profile-img {
-
+    .line-1 {
         margin: 0;
     }
 
+    .profile-img {
+        max-width: 350px;
+        margin-top: 1em;
+    }
+
     .profile-img img {
-        max-width: 400px;
+
         margin: 0;
         
         border-radius: 50%;
     }
 }
 
+@media (min-width: 500px) and (max-width: 950px) {
 
 
+    .profile-title {
+
+        font-size: 55px;
+
+    
+    }
+
+        .descProfile {
+        font-size: 30px;
+        width: fit-content;
+        
+    }
+    .animaProfile .line-1{
+    font-size: 1.5em;
+
+}
+.profile-img {
+    margin-top: 1em;
+
+}
+
+/* primera línea */
+.animaProfile .line-2 {
+  font-size: 1.5em;;
+
+
+}
+
+/* segunda línea aparece después */
+.animaProfile .line-3 {
+  font-size: 1.5em;
+}
+}

@@ -1,13 +1,14 @@
 .about {
-    background-color: #570A06;
+    background-color: var(--primary-color);
     padding: 8em 3em 8em 3em;
 }
 
 .about-container {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 3em;
     align-items: center;
+
 
 }
 
@@ -16,6 +17,8 @@
     flex-direction: column;
     gap: 1em;
     margin-bottom: 3em;
+
+    
 }
 
 .about-container h2 {
@@ -57,49 +60,56 @@
 }
 
 .about-btns a {
-    background-color: var(--secondary);
-    color:#380408;
+    background-color: whitesmoke;
+    color: #570A06;
     padding: 1em 1em;
     text-decoration: none;
     font-family: var(--font-retroica), serif;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.1em;
-    border: 2px solid var(--primary-color);
+    
     border-radius: 30px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .about-btns a:hover {
-    background-color: var(--secondarydary) ;
+    background-color: #570A06;
+    color: whitesmoke;
     scale: 1.05;
 
 }
 
-.about-container img {
+.img-about {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 1;
+ 
+    max-width: 400px;
 
-    max-width: 300px;
-    border-radius: 10px;
 
-    background-color: blue;
-    margin-bottom: 2em;
 }
 
-@media (min-width: 1050px) {
+.img-about img {
+    display: flex;
+    flex: 0 0 1;
+    border-radius: 30px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 1112px) {
 
     .about-container {
         display: flex;
         flex-direction: row;
-        gap: 4em;
-        height: fit-content;
-        justify-content: space-around;
-        padding: 0;
-        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 3em;
     }
 
     .txt-btn-about {
-        display: flex;
-        flex-direction: column;
+        margin-top: 1em;
         gap: 1em;
         margin-bottom: 0;
     }
@@ -113,7 +123,7 @@
         letter-spacing: 0.1em;
         letter-spacing: 0.15em;
         max-width: 700px;
-        margin-bottom: 1.5em;
+        margin-bottom: 1em;
     }
 
     .about-container span {
@@ -129,44 +139,26 @@
 
     .about-btns {
         display: flex;
+        flex-direction: row;
         gap: 1em;
         justify-content: right;
 
     }
 
     .about-btns a {
-        background-color: var(--secondary);
-        color: var(--primary-color);
-        padding: 0.5em 1em;
-        text-decoration: none;
-        font-family: var(--font-retroica), serif;
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 0.1em;
-        border: 2px solid var(--primary-color);
-        border-radius: 20px;
-        transition: background-color 0.3s, color 0.3s;
+    
     }
 
     .about-btns a:hover {
-        background-color: var(--secondarydary) ;
-        color: var(--primary-color);
-        padding: 0.5em 1em;
-        text-decoration: none;
-        font-family: var(--font-retroica), serif;
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 0.1em;
-        border: 2px solid var(--primary-color);
-        border-radius: 20px;
 
     }
 
-    .about-container img {
+    .img-about {
+        flex-direction: column;
+    }
 
-        max-width: auto;
-        
-        border-radius: 10px;
+    .img-about img {
+        flex-direction: column;
     }
 
 }

@@ -14,22 +14,22 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--secondary); 
+    background-color: white; 
     margin-top: 5em;
 
 }
 
 
 @font-face {
-  font-family: "develuz";
-  src: url("../fonts/Develuz.ttf") format("woff2");
+  font-family: "spray";
+  src: url("../fonts/Spray\ Letters.otf") format("woff2");
   
   
 }
 
 
 
-section, div, h2, h3, img, nav, a, li, textarea, input {
+section, div, h2, h3, img, nav, a, li, textarea, input, ul, p, span {
     padding: 0;
     margin: 0;
 }

@@ -1,4 +1,5 @@
 .div-contacto {
+  padding-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,12 +10,9 @@
   background-color: var(--primary-color);
 
   padding-bottom: 10vh;
-  padding-top: 10vh;
 }
 
 .seccion-contacto h3 {
-
-
 color: white;
 font-size: 30px;
   margin-top: 4rem;
@@ -72,9 +70,9 @@ grid-column: 1 / -1;
 
 
 .contacto-enviar button {
-    background-color: #380408;
-    border-radius: 20px ;
-    padding: 0.5em 1em;
+    background-color: var(--primary-color);
+    border-radius: 30px ;
+    padding: .8em 1em;
 
     font-size: 18px;
     color: white;
