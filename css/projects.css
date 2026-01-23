@@ -4,7 +4,8 @@
     align-items: center;
     gap: 5em;
     font-family: 'raleway';
-    padding: 10vh 2em;
+    padding: 10vh 2em ;
+    margin-bottom: 4em;
 }
 
 .projects-title h2 {
@@ -80,14 +81,14 @@
     flex-wrap: wrap;
     gap: .8em;
     margin-bottom: 1.5em;
-    justify-content: start;
+    justify-content: center;
 }
 
 .proyecto-btns a {
     background-color:var(--primary-color);
     border-radius: 20px ;
     padding: 0.5em 1em;
-
+    
     font-size: 16px;
     color: white;
     font-weight: bold;

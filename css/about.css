@@ -1,14 +1,16 @@
 .about {
     background-color: var(--primary-color);
-    padding: 8em 3em 8em 3em;
+    padding: 6em 3em 6em 3em;
+    display: flex;
+    justify-content: center;
 }
 
 .about-container {
     display: flex;
     flex-direction: column;
     gap: 3em;
-    align-items: center;
-
+justify-content: center;
+max-width: 410px;
 
 }
 
@@ -16,9 +18,10 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin-bottom: 3em;
 
-    
+
+    max-width: 400px;
+    margin: auto;
 }
 
 .about-container h2 {
@@ -31,17 +34,17 @@
 
 .about-container p {
     color: rgb(110, 185, 235);
-    font-size: 20px;
+    font-size: 18px;
     font-family: var(--font-retroica), serif;
     font-weight: bold;
     letter-spacing: 0.15em;
-    max-width: 400px;
+    max-width: 390px;
     margin-bottom: 2em;
 }
 
 .about-container span {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     font-family: var(--font-retroica), serif;
     font-weight: bold;
@@ -53,7 +56,7 @@
 .about-btns {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 1em;
+    column-gap: .5em;
     row-gap: 1.5em;
 
 
@@ -62,15 +65,17 @@
 .about-btns a {
     background-color: whitesmoke;
     color: #570A06;
-    padding: 1em 1em;
+    padding: 1em 1.5em;
     text-decoration: none;
     font-family: var(--font-retroica), serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.1em;
-    
+
     border-radius: 30px;
     transition: background-color 0.3s, color 0.3s;
+
+
 }
 
 .about-btns a:hover {
@@ -82,53 +87,61 @@
 
 .img-about {
     display: flex;
-    flex-direction: column;
-    flex: 0 0 1;
- 
-    max-width: 400px;
+justify-content: center;
+flex: 1 1 1;
+
+width: 100%;
 
 
 }
 
 .img-about img {
     display: flex;
-    flex: 0 0 1;
+flex: 1 1 1;
     border-radius: 30px;
-    max-width: 100%;
-    object-fit: cover;
+    width: 100%;
+    max-width: 400px;
+
 }
 
-@media (min-width: 1112px) {
+@media (min-width: 952px) {
 
     .about-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
+        flex-wrap: nowrap;  
+max-width: 100%;
         gap: 3em;
+padding: 0;
+
+align-items: center;
     }
 
     .txt-btn-about {
-        margin-top: 1em;
-        gap: 1em;
-        margin-bottom: 0;
+        display: flex;
+        gap: 1.5em;
+
+        max-width: 100%;
+        margin: 0 .5em 0 0;
+
     }
 
     .about-container p {
         color: rgb(149, 205, 243);
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
         font-family: var(--font-retroica), serif;
         font-weight: bold;
-        letter-spacing: 0.1em;
+        line-height: 1.1em;
         letter-spacing: 0.15em;
-        max-width: 700px;
-        margin-bottom: 1em;
+        max-width: 100%;
+        margin-bottom: .05em;
+        
     }
 
     .about-container span {
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
         font-family: var(--font-retroica), serif;
         font-weight: bold;
@@ -139,14 +152,20 @@
 
     .about-btns {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        gap: 1em;
+        gap: .5em;
         justify-content: right;
+        
 
     }
 
     .about-btns a {
-    
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+
     }
 
     .about-btns a:hover {
@@ -154,11 +173,44 @@
     }
 
     .img-about {
-        flex-direction: column;
+margin: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
     }
 
     .img-about img {
-        flex-direction: column;
+
+width: 100%;
+object-fit: cover;
+flex: 1 1 auto;
+height: 100%;
+object-fit: cover;
     }
 
+}
+
+@media (min-width: 1035px) {
+    .about-container p {
+        font-size: 19px;
+    }
+
+    .about-container span {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1097px) {
+    .about-container p {
+        font-size: 20px;
+    }
+
+    .about-container span {
+        font-size: 20px;
+    }
+    .txt-btn-about {
+
+        gap: 2em;
+    }
 }
