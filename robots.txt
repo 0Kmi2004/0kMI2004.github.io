@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://0Kmi2004.github.io/sitemap.xml

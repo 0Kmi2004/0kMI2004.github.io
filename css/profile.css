@@ -90,7 +90,7 @@ flex-wrap: wrap;
 }
 
 .descProfile span::before {
-    content: "junior front end developer" ;
+    content: "front end developer" ;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -116,7 +116,7 @@ flex-wrap: wrap;
 
 @keyframes words{
     0%, 100%{
-        content: "junior front end developer" ;
+        content: "front end developer" ;
 
     }
 
