@@ -2,29 +2,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5em;
+    gap: 8em;
     font-family: 'raleway';
-    padding: 10vh 2em ;
+    padding: 30vh 2em ;
     margin-bottom: 4em;
+
 }
 
 .projects-title h2 {
-    padding: 3em 0 1em;
+    margin: auto;
     color: var(--primary-color);
     font-size: 30px;
+
 }
 
 .grid-proyectos {
     display: grid;
     grid-template-columns: auto;
-    gap: 3em;
+
     max-width: 400px;
 }
 
 .proyecto-card {
     box-shadow: 5px 5px 30px ;
     border-radius: 40px;
-    max-width: 400px;
+
 
 }
 
@@ -72,15 +74,15 @@
 .etiqueta-proyecto p {
     padding-bottom: 0.5em;
     color: white;
-    
+    text-align: justify;
     line-height: 1.5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .proyecto-btns {
     display: flex;
     flex-wrap: wrap;
-    gap: .8em;
+    gap: .5em;
     margin-bottom: 1.5em;
     justify-content: center;
 }
