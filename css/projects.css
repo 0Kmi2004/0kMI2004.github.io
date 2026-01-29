@@ -60,6 +60,7 @@
     border-end-end-radius: 40px;
     justify-content: center;
     gap: 1em;
+    object-fit: cover;
 }
 
 .etiqueta-proyecto h3 {
@@ -105,10 +106,5 @@
 }
 
 @media (min-width: 850px) {
-    .grid-proyectos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5em;
-    max-width: 1000px;
-}
+
 }
