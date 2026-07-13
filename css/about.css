@@ -63,8 +63,8 @@ max-width: 410px;
 }
 
 .about-btns a {
-    background-color: whitesmoke;
-    color: #570A06;
+    background-color: var(--secondary);
+    color: #490602;
     padding: 1em 1.5em;
     text-decoration: none;
     font-family: var(--font-retroica), serif;
@@ -80,7 +80,7 @@ max-width: 410px;
 
 .about-btns a:hover {
     background-color: #570A06;
-    color: whitesmoke;
+    color: var(--secondary);
     scale: 1.05;
 
 }

@@ -116,7 +116,7 @@ flex-wrap: wrap;
 
 @keyframes words{
     0%, 100%{
-        content: "front end developer" ;
+        content: "web developer" ;
 
     }
 
@@ -272,8 +272,6 @@ font-family: "russo one";
     .profile-title {
 
         font-size: 55px;
-
-    
     }
 
         .descProfile {

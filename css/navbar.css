@@ -95,7 +95,7 @@ flex-direction: row;
 .menu li:hover {
     background-color: #731a15;
     box-shadow: 0 5px 4px #570A06;
-
+    border-radius: 10px;
 }
 
 

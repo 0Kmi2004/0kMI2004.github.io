@@ -19,7 +19,7 @@
 .grid-proyectos {
     display: grid;
     grid-template-columns: auto;
-
+    gap: 2em;
     max-width: 400px;
 }
 
@@ -41,8 +41,20 @@
     max-width: 100%;
     padding: 1em;
 justify-content: center;
-background-color: rgb(252, 147, 9);
+
 object-fit: cover;
+}
+
+.rumi{
+background-color: rgb(252, 147, 9);
+}
+
+.study{
+    background-color: rgb(41, 108, 252);
+}
+
+.libro{
+    background-color: rgb(201, 0, 228);
 }
 
 .proyecto-img img {
